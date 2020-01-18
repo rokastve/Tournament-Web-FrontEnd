@@ -1,0 +1,108 @@
+*{
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+.card{
+  margin-bottom: 10px;
+  margin-top:10px;
+  box-shadow: 2px 2px;
+}
+.container{
+  margin-bottom: 20px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: rgb(248, 221, 221);
+  text-align: center;
+  transition: 2s;
+}
+.footer .container{
+  margin-bottom: 0px
+}
+.svglogo{
+  fill:white !important;
+  width:3.5%;
+  transition:1s;
+}
+.tournament-logo{
+  min-height: 200px;
+}
+.svglogo:hover{
+  transform: rotateZ(-35deg);
+}
+.top-panel1{
+  border-radius: 15px 0px 0px 15px;
+}
+.top-panel2{
+  border-radius: 0px 15px 15px 0px;
+}
+.unselectable{
+  -moz-user-select: none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+
+   /*
+     Introduced in Internet Explorer 10.
+     See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+   */
+   -ms-user-select: none;
+   user-select: none;
+}
+.tournament-button{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  transition:1s
+}
+.tournament-button:hover{
+  transform: scale(1.1,1.1);
+}
+.tournament-box{
+  background-color: gray;
+  border-radius: 15px 15px 15px 15px;
+  padding: 10px;
+  box-shadow: 2px 2px;
+}
+@media only screen and (min-width: 768px) {
+/* [1] The container */
+.img-hover-zoom {
+  height: 200px; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.2);
+}
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .card-img-top{
+    text-align: center;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+  .svglogo{
+    fill:white !important;
+    width:7%
+  }
+  .top-panel1{
+    border-radius: 15px 15px 0px 0px;
+  }
+  .top-panel2{
+    border-radius: 0px 0px 15px 15px;
+    margin-bottom: 5px;
+  }
+}
